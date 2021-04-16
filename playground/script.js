@@ -25,7 +25,19 @@ console.log("a*b=", a * b);
 let str = "a string";
 console.log(str);
 console.log(typeof str);
+
 let str2 = " is " + str;
 str += str2;
-
 console.log(str);
+
+// Boolean
+let aTrue = true;
+let aFalse = false;
+let testBool = aTrue + aFalse;
+console.log(testBool);
+console.log(typeof testBool);
+
+const and = aTrue && aFalse;
+const or = aTrue || aFalse;
+console.log(and, or);
+console.log(!and, !or);
