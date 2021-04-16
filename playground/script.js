@@ -20,3 +20,12 @@ a = 1.2;
 b = 2.2;
 console.log("a+b=", a + b);
 console.log("a*b=", a * b);
+
+// Strings
+let str = "a string";
+console.log(str);
+console.log(typeof str);
+let str2 = " is " + str;
+str += str2;
+
+console.log(str);
