@@ -41,3 +41,13 @@ const and = aTrue && aFalse;
 const or = aTrue || aFalse;
 console.log(and, or);
 console.log(!and, !or);
+
+// null
+let nil = null;
+console.log("null", null);
+console.log("null is ", typeof nil);
+
+// undefined
+let undef = undefined;
+console.log("undefined", undef);
+console.log("undefined is", typeof undef);
