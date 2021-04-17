@@ -51,3 +51,46 @@ console.log("null is ", typeof nil);
 let undef = undefined;
 console.log("undefined", undef);
 console.log("undefined is", typeof undef);
+
+// Comparisons
+console.log("a==b", a == b);
+console.log("a!=b", a != b);
+console.log("a<b", a < b);
+console.log("a>b", a > b);
+console.log("null == undefined", null == undefined);
+
+// Functions
+function add(a, b) {
+  return a + b;
+}
+
+let sum = add(1, 2);
+console.log("sum", sum);
+
+function hi(name) {
+  console.log("Hi " + name);
+}
+hi("Mario");
+
+// Args
+function printVar(val) {
+  console.log(val);
+}
+
+function func(x) {
+  x("function argument");
+}
+
+func(printVar);
+
+// callback
+function sumCallback(a, b, callback) {
+  callback(a + b);
+}
+
+// handler
+function handleSum(sum) {
+  console.log(sum);
+}
+
+sumCallback(1, 2, handleSum);
