@@ -1,4 +1,6 @@
 // Variables
+console.log("Variables");
+
 let a = 1;
 let b = 2;
 let c = 3;
@@ -8,11 +10,13 @@ console.log(a);
 console.log(d);
 
 // Number
+console.log("\nNumbers");
+
 let int = 1;
 let float = 1.1;
 
-console.log(typeof int);
-console.log(typeof float);
+console.log("typeof int:", typeof int);
+console.log("typeof float:", typeof float);
 console.log(float + int);
 console.log("(a+b)/c = ", (a + b) / c);
 
@@ -22,6 +26,8 @@ console.log("a+b=", a + b);
 console.log("a*b=", a * b);
 
 // Strings
+console.log("\nStrings");
+
 let str = "a string";
 console.log(str);
 console.log(typeof str);
@@ -31,6 +37,8 @@ str += str2;
 console.log(str);
 
 // Boolean
+console.log("Boolean");
+
 let aTrue = true;
 let aFalse = false;
 let testBool = aTrue + aFalse;
@@ -43,16 +51,22 @@ console.log(and, or);
 console.log(!and, !or);
 
 // null
+console.log("\nnull");
+
 let nil = null;
 console.log("null", null);
 console.log("null is ", typeof nil);
 
 // undefined
+console.log("\nundefined");
+
 let undef = undefined;
 console.log("undefined", undef);
 console.log("undefined is", typeof undef);
 
 // Comparisons
+console.log("\nComparisons");
+
 console.log("a==b", a == b);
 console.log("a!=b", a != b);
 console.log("a<b", a < b);
@@ -60,6 +74,8 @@ console.log("a>b", a > b);
 console.log("null == undefined", null == undefined);
 
 // Functions
+console.log("\nFunctions");
+
 function add(a, b) {
   return a + b;
 }
@@ -73,6 +89,8 @@ function hi(name) {
 hi("Mario");
 
 // Args
+console.log("\nArguments");
+
 function printVar(val) {
   console.log(val);
 }
@@ -84,6 +102,8 @@ function func(x) {
 func(printVar);
 
 // callback
+console.log("Callbacks");
+
 function sumCallback(a, b, callback) {
   callback(a + b);
 }
@@ -94,3 +114,24 @@ function handleSum(sum) {
 }
 
 sumCallback(1, 2, handleSum);
+
+// Arrow fx
+console.log("\nArrow FX");
+
+const sumAF = (a, b) => a + b;
+console.log("Sum AF = ", sumAF(1, 2));
+
+const printName = name => console.log(name);
+printName("Mario");
+
+const printHi = name => `Hi ${name}`;
+console.log(printHi("Mario"));
+
+function func2(x, callback) {
+  callback(x);
+}
+
+func2(10, val => console.log(val));
+
+// Stack
+console.log("\nStack");
