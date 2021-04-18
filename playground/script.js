@@ -144,3 +144,14 @@ function doStuff(a, b, name) {
   print(sum(a, b));
   print(printHi(name));
 }
+
+// Hoisting
+console.log("\nHoisting");
+console.log(sumHoisted(1, 2));
+
+function sumHoisted(a, b) {
+  return a + b;
+}
+
+// hoisting not working with arrow functions (var!!!)
+const addNotHoisted = (a, b) => a + b;
