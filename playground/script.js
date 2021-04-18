@@ -135,3 +135,12 @@ func2(10, val => console.log(val));
 
 // Stack
 console.log("\nStack");
+
+function print(val) {
+  console.log(val);
+}
+
+function doStuff(a, b, name) {
+  print(sum(a, b));
+  print(printHi(name));
+}
